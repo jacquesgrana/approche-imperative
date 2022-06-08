@@ -8,7 +8,7 @@ public class DeclarationApp {
 		int varInt = 15;
 		long varLong = 1500L;
 		float varFloat = 2.5f;
-		double varDouble = 0.258;
+		double varDouble = 0.258d;
 		char varChar = '&';
 		boolean varBoolean = true;
 		String varString = "test01";
