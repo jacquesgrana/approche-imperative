@@ -7,7 +7,7 @@ public class InteractifTantQue {
 	public static void main(String[] args) {
 		
 		int myValue;
-		Scanner scanner = new Scanner(System.in) ;
+		Scanner scanner = new Scanner(System.in);
 		
 		do {
 			System.out.println("Saisir une valeur entre 1 et 10 : ");
@@ -16,6 +16,7 @@ public class InteractifTantQue {
 		while (myValue < 1 || myValue > 10);
 		
 		System.out.println("\nValeur choisie : " + myValue);
+		scanner.close();
 	}
 
 }

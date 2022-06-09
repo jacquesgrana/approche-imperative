@@ -14,6 +14,8 @@ public class InteractifTableMult {
 		}
 		while (myValue < 1 || myValue > 10);
 		
+		scanner.close();
+		
 		System.out.println("\nTable de " + myValue);
 		
 		for (int i=1; i<=10; i++) {
