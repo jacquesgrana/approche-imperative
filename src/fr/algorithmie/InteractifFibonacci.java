@@ -22,8 +22,6 @@ public class InteractifFibonacci {
 		}
 		
 		System.out.println("\nRésultat : " + result);
-		
-		
 		scanner.close();
 	}
 
