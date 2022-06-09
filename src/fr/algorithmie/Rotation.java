@@ -13,7 +13,7 @@ public class Rotation {
 		}
 		
 		for (int i=0; i<myTab.length; i++) {
-			if (i<myTab.length-1) {
+			if (i < myTab.length-1) {
 				tempTab[i+1] = myTab[i];
 			}
 			else {
@@ -30,5 +30,4 @@ public class Rotation {
 			System.out.println(myTab[i]);
 		}
 	}
-
 }
