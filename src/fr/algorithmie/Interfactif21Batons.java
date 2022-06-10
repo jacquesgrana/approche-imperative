@@ -11,9 +11,6 @@ public class Interfactif21Batons {
 		int choiceCont = 0;
 		
 		do {
-			displayTitle(turn);
-			displayGame(nbBaton);
-			displayMenu();
 			
 			// TODO ajouter si reste un baton : perdu
 			if(nbBaton <= 1) {
@@ -21,6 +18,10 @@ public class Interfactif21Batons {
 				quit = true;
 				break;
 			}
+			
+			displayTitle(turn);
+			displayGame(nbBaton);
+			displayMenu();
 			
 			do {
 				choice = scanner.nextInt();
@@ -44,7 +45,9 @@ public class Interfactif21Batons {
 			}
 			
 			displayGame(nbBaton);
+			
 			// TODO attendre appui touche
+			
 			System.out.println("\nContinuer : 1");
 			do {
 				choiceCont = scanner.nextInt();
@@ -53,7 +56,7 @@ public class Interfactif21Batons {
 			
 			System.out.println("\nL'ordinateur joue :");
 			
-			// tirage nombre aelatoire entre 1 et 3
+			// tirage nombre aleatoire entre 1 et 3
 			int random = (int) Math.round(Math.random()*3);
 			// affecter nombre de batons
 			nbBaton -= random;

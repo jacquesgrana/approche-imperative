@@ -15,12 +15,11 @@ public class FabriquerMur {
 		verifier(1, 4, 12, false);
 		verifier(3, 1, 7, true);
 		verifier(1, 1, 7, false);
-
 	}
 	
 	private static boolean fabriquerMur(int nbSmall, int nbBig, int longueur) {
 		boolean isOk;
-		if(((longueur / 5 <= nbBig) && (longueur % 5 <= nbSmall)) || (nbBig * 5 + nbSmall == longueur)){
+		if(((longueur / 5 <= nbBig) && (longueur % 5 <= nbSmall)) || (nbBig * 5 + nbSmall >= longueur)){
 			isOk = true;
 		}
 		else {
